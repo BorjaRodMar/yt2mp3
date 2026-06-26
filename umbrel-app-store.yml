@@ -1,0 +1,4 @@
+# Define tu Community App Store.
+# El 'id' es el prefijo OBLIGATORIO de cada app del store (solo minúsculas y guiones).
+id: "borjarodmar"
+name: "BorjaRodMar"

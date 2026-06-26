@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: borjarodmar-yt2mp3
+name: Onda
+tagline: Extrae el audio de YouTube y SoundCloud en MP3
+# El icono es opcional; sustituye por una URL propia o déjalo y ponlo luego.
+icon: https://raw.githubusercontent.com/BorjaRodMar/yt2mp3/main/borjarodmar-yt2mp3/icon.svg
+category: Media
+version: "1.0.4"
+# Puerto que Umbrel expondrá en el escritorio (el que abres). Elige uno libre.
+port: 8480
+description: >-
+  Prototipo personal que extrae el audio de un vídeo de YouTube o un track de
+  SoundCloud (vía yt-dlp) y lo convierte a MP3 con FFmpeg.
+
+
+  Pega el enlace, mira lo que encuentra, elige la calidad y descarga el MP3
+  directo al navegador. Solo para uso legítimo (contenido propio o con licencia
+  libre).
+developer: BorjaRodMar
+website: https://github.com/BorjaRodMar/yt2mp3
+submitter: BorjaRodMar
+submission: https://github.com/BorjaRodMar/yt2mp3
+repo: https://github.com/BorjaRodMar/yt2mp3
+support: https://github.com/BorjaRodMar/yt2mp3/issues
+gallery:
+  - https://raw.githubusercontent.com/BorjaRodMar/yt2mp3/main/borjarodmar-yt2mp3/gallery-1.png
+releaseNotes: >-
+  Favicon en la interfaz y limpieza de identificadores.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+
+  # El app_proxy es la pieza de Umbrel: enruta y mete la capa de login
+  # de Umbrel DELANTE de tu app. APP_HOST sigue el formato <app-id>_<servicio>_1.
+  app_proxy:
+    environment:
+      APP_HOST: borjarodmar-yt2mp3_server_1
+      # Puerto INTERNO en el que escucha tu contenedor (gunicorn -> 5000).
+      APP_PORT: 5000
+
+  server:
+    # Imagen publicada en GHCR por el GitHub Action (nombre SIEMPRE en minúsculas).
+    # El paquete GHCR debe ser PÚBLICO para que Umbrel pueda descargarlo.
+    # Nota: corre como root (sin 'user:') a propósito. El volumen ${APP_DATA_DIR}/data
+    # lo crea Docker como root en el primer arranque, así que un UID no-root no podría
+    # escribir ahí. El app_proxy de Umbrel ya pone el login delante.
+    image: ghcr.io/borjarodmar/yt2mp3:latest
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      # Home escribible (yt-dlp guarda aquí su caché y evitamos errores de permisos).
+      HOME: /app/descargas
+    volumes:
+      # Los MP3 persisten en el directorio de datos que Umbrel asigna a la app.
+      - ${APP_DATA_DIR}/data:/app/descargas

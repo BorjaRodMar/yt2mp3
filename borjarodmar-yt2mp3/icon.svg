@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF4B3E"/>
+      <stop offset="1" stop-color="#FF9A3D"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fondo squircle con degradado y un sutil brillo superior -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#sheen)"/>
+
+  <!-- botón de play (el "vídeo") -->
+  <path d="M158 170 L158 342 L296 256 Z" fill="#fff"
+        stroke="#fff" stroke-width="18" stroke-linejoin="round"/>
+
+  <!-- barras de ecualizador (el "audio") -->
+  <g fill="#fff">
+    <rect x="320" y="206" width="26" height="100" rx="13"/>
+    <rect x="358" y="171" width="26" height="170" rx="13"/>
+    <rect x="396" y="191" width="26" height="130" rx="13"/>
+  </g>
+</svg>
