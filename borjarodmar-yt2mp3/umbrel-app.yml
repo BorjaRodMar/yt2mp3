@@ -5,7 +5,7 @@ tagline: Extrae el audio de YouTube y SoundCloud en MP3
 # El icono es opcional; sustituye por una URL propia o déjalo y ponlo luego.
 icon: https://raw.githubusercontent.com/BorjaRodMar/yt2mp3/main/borjarodmar-yt2mp3/icon.svg
 category: Media
-version: "1.0.4"
+version: "1.0.5"
 # Puerto que Umbrel expondrá en el escritorio (el que abres). Elige uno libre.
 port: 8480
 description: >-
@@ -25,7 +25,7 @@ support: https://github.com/BorjaRodMar/yt2mp3/issues
 gallery:
   - https://raw.githubusercontent.com/BorjaRodMar/yt2mp3/main/borjarodmar-yt2mp3/gallery-1.png
 releaseNotes: >-
-  Favicon en la interfaz y limpieza de identificadores.
+  Mensajes de error claros (DRM, contenido privado, geobloqueo, etc.) en vez de uno genérico.
 dependencies: []
 path: ""
 defaultUsername: ""
